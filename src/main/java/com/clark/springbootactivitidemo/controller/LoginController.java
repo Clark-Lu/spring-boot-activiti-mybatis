@@ -21,6 +21,12 @@ public class LoginController {
         return "login";
     }
 
+    @PostMapping("/hello")
+    @ResponseBody
+    public String hello(String name){
+        return "hello " + name;
+    }
+
 }
 
 
